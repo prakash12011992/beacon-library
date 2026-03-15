@@ -12,28 +12,42 @@ color:#0a3d91;
 color:#555;
 }
 
-#seats{
-width:420px;
+/* Seat container */
+
+.seat-container{
+width:500px;
 margin:auto;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+margin-top:20px;
 }
+
+/* Row design */
+
+.row{
+margin:10px;
+}
+
+/* Seat button */
 
 .seat{
 width:45px;
 height:45px;
 margin:5px;
 border:none;
-border-radius:5px;
+border-radius:6px;
 color:white;
 cursor:pointer;
-}
-
-.available{
+font-weight:bold;
 background:green;
 }
 
-.reserved{
+/* Booked seat */
+
+.seat.booked{
 background:red;
+}
+
+/* Hover effect */
+
+.seat:hover{
+transform:scale(1.1);
 }
